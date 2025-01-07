@@ -1,5 +1,39 @@
 # Deep Cuda: Image Classification with CNN in CUDA
 
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Project Structure](#project-structure)
+4. [Installation and Usage](#installation-and-usage)
+   - [Prerequisites](#prerequisites)
+   - [Running the Project on Google Colab](#running-the-project-on-google-colab)
+   - [Running Locally](#running-locally)
+5. [Notebook Structure](#notebook-structure)
+6. [Project Workflow](#project-workflow)
+   - [1. Dataset Preparation](#1-dataset-preparation)
+   - [2. CUDA Implementation](#2-cuda-implementation)
+   - [3. Training](#3-training)
+   - [4. Testing](#4-testing)
+7. [How the Code Works](#how-the-code-works)
+   - [CNN Architecture](#cnn-architecture)
+     - [1. Input Layer](#1-input-layer)
+     - [2. Convolutional Layer (C1)](#2-convolutional-layer-c1)
+     - [3. Subsampling (Pooling) Layer (S1)](#3-subsampling-pooling-layer-s1)
+     - [4. Fully Connected Layer (F)](#4-fully-connected-layer-f)
+   - [Forward Propagation (Feedforward Pass)](#forward-propagation-feedforward-pass)
+   - [Backward Propagation (Training Pass)](#backward-propagation-training-pass)
+   - [Optimization](#optimization)
+   - [Advantages of CUDA Acceleration](#advantages-of-cuda-acceleration)
+8. [Performance](#performance)
+9. [Results](#results)
+    - [Training Summary](#training-summary)
+    - [Example Output](#example-output)
+10. [Contribution](#contribution)
+11. [Acknowledgments](#acknowledgments)
+
+---
+
 ## Project Overview
 
 Deep Cuda is an advanced implementation of a **Convolutional Neural Network (CNN)** written in **CUDA C++** to classify images from the **MNIST dataset**. This project leverages the power of **NVIDIA GPUs** for efficient parallel computation, aiming to achieve high-speed image classification through customized CUDA kernels for both forward and backward propagation.
