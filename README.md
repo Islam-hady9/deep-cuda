@@ -1,4 +1,4 @@
-# Deep Cuda: Image Classification with CNN in CUDA
+# Deep Cuda: Image Classification with CNN in CUDA C++
 
 ## Table of Contents
 
